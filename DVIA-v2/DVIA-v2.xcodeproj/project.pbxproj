@@ -56,7 +56,6 @@
 		F6DE6F86202FA4DE00A3A757 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DE6F3D202FA4DD00A3A757 /* Constants.swift */; };
 		F6DE6F88202FA4DE00A3A757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DE6F3F202FA4DE00A3A757 /* Assets.xcassets */; };
 		F6DE6FA7202FA53900A3A757 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE6FA6202FA53900A3A757 /* Foundation.framework */; };
-		F6DE6FA9202FA6E500A3A757 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F6DE6FA8202FA6E400A3A757 /* Info.plist */; };
 		F6E64504202FBB6700884A43 /* YapDatabaseConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E64411202FBB6700884A43 /* YapDatabaseConnection.m */; };
 		F6E64505202FBB6700884A43 /* YapDatabaseTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E64413202FBB6700884A43 /* YapDatabaseTransaction.m */; };
 		F6E64506202FBB6700884A43 /* YapDatabaseConnectionState.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E64416202FBB6700884A43 /* YapDatabaseConnectionState.m */; };
@@ -1643,7 +1642,6 @@
 				F6ED006F206F8337000D1E99 /* slider-bg@2x.png in Resources */,
 				F6E645AF202FBC6000884A43 /* ApplicationPatching.storyboard in Resources */,
 				F6C8AA1B205A9BE3001E1CCB /* Donate.storyboard in Resources */,
-				F6DE6FA9202FA6E500A3A757 /* Info.plist in Resources */,
 				6E30A0A820874C34007534D8 /* AppIcons in Resources */,
 				F6E645B1202FBC6000884A43 /* AttackingThirdPartyLibraries.storyboard in Resources */,
 				F6DE6F85202FA4DE00A3A757 /* Root.storyboard in Resources */,
