@@ -608,18 +608,18 @@ extension List: MutableCollection {
     }
 
     //// :nodoc:
-    public func removeSubrange(_ bounds: CountableRange<Int>) {
+  /*  public func removeSubrange(_ bounds: CountableRange<Int>) {
         for _ in bounds {
             remove(at: bounds.lowerBound)
         }
-    }
+    }*/
 
     /// :nodoc:
-    public func removeSubrange(_ bounds: CountableClosedRange<Int>) {
+   /* public func removeSubrange(_ bounds: CountableClosedRange<Int>) {
         for _ in bounds {
             remove(at: bounds.lowerBound)
         }
-    }
+    }*/
 
     /// :nodoc:
     public func removeSubrange(_ bounds: DefaultRandomAccessIndices<List>) {
@@ -634,18 +634,18 @@ extension List: MutableCollection {
     }
 
     /// :nodoc:
-    public func replaceSubrange<C: Collection>(_ subrange: CountableRange<Int>, with newElements: C)
+    /*public func replaceSubrange<C: Collection>(_ subrange: CountableRange<Int>, with newElements: C)
         where C.Iterator.Element == Element {
             removeSubrange(subrange)
             insert(contentsOf: newElements, at: subrange.lowerBound)
-    }
+    }*/
 
     /// :nodoc:
-    public func replaceSubrange<C: Collection>(_ subrange: CountableClosedRange<Int>, with newElements: C)
+   /* public func replaceSubrange<C: Collection>(_ subrange: CountableClosedRange<Int>, with newElements: C)
         where C.Iterator.Element == Element {
             removeSubrange(subrange)
             insert(contentsOf: newElements, at: subrange.lowerBound)
-    }
+    }*/
 
     /// :nodoc:
     public func replaceSubrange<C: Collection>(_ subrange: DefaultRandomAccessIndices<List>, with newElements: C)

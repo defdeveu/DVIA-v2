@@ -53,7 +53,9 @@ extension BrokenCryptographyPinDetailsViewController: UITextFieldDelegate {
         let passwordData = password.data(using:String.Encoding.utf8)!
         var derivedKeyData = Data(repeating:0, count:keyByteCount)
         
-        let derivationStatus = derivedKeyData.withUnsafeMutableBytes {derivedKeyBytes in
+        var x = derivedKeyData;
+        
+        let derivationStatus = x.withUnsafeMutableBytes {derivedKeyBytes in
             salt.withUnsafeBytes { saltBytes in
                 //Could also use SHA256 or SHA512 :/
                 CCKeyDerivationPBKDF(

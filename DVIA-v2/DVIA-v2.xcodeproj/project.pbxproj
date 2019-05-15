@@ -133,7 +133,6 @@
 		F6E6454D202FBB6700884A43 /* YapCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644CA202FBB6700884A43 /* YapCache.m */; };
 		F6E6454E202FBB6700884A43 /* YapWhitelistBlacklist.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644CD202FBB6700884A43 /* YapWhitelistBlacklist.m */; };
 		F6E6454F202FBB6700884A43 /* YapDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644CF202FBB6700884A43 /* YapDatabase.m */; };
-		F6E64550202FBB6700884A43 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6E644D1202FBB6700884A43 /* LICENSE.txt */; };
 		F6E64551202FBB6700884A43 /* YapDatabaseOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644D2202FBB6700884A43 /* YapDatabaseOptions.m */; };
 		F6E64552202FBB6700884A43 /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644D7202FBB6700884A43 /* RNCryptor.m */; };
 		F6E64553202FBB6700884A43 /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644DD202FBB6700884A43 /* RNOpenSSLCryptor.m */; };
@@ -151,7 +150,6 @@
 		F6E6455F202FBB6700884A43 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6E644F6202FBB6700884A43 /* README.txt */; };
 		F6E64560202FBB6700884A43 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644F7202FBB6700884A43 /* DDLog.m */; };
 		F6E64561202FBB6800884A43 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644FA202FBB6700884A43 /* DDAbstractDatabaseLogger.m */; };
-		F6E64562202FBB6800884A43 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F6E644FB202FBB6700884A43 /* LICENSE.txt */; };
 		F6E64563202FBB6800884A43 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644FC202FBB6700884A43 /* DDFileLogger.m */; };
 		F6E64564202FBB6800884A43 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E644FE202FBB6700884A43 /* DDASLLogCapture.m */; };
 		F6E64565202FBB6800884A43 /* PDKeychainBindingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E64500202FBB6700884A43 /* PDKeychainBindingsController.m */; };
@@ -211,6 +209,7 @@
 
 /* Begin PBXFileReference section */
 		06128A191A180E39D5A8BB42 /* Pods-DVIA-v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVIA-v2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVIA-v2/Pods-DVIA-v2.debug.xcconfig"; sourceTree = "<group>"; };
+		2DCE5CE3225244BB00160FC2 /* DVIA-v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DVIA-v2.entitlements"; sourceTree = "<group>"; };
 		6E178C072084CA6900F39E47 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6E178C092084CA6F00F39E47 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6E30A0A720874C33007534D8 /* AppIcons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcons; sourceTree = "<group>"; };
@@ -649,6 +648,7 @@
 		F65AC869202FA37500E4088A /* DVIA-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				2DCE5CE3225244BB00160FC2 /* DVIA-v2.entitlements */,
 				6EF0C41F20622B300089050C /* Images */,
 				F6E645D9202FBCAB00884A43 /* Model */,
 				F6E6440F202FBB6700884A43 /* Vendor */,
@@ -1596,6 +1596,11 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -1623,7 +1628,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6E645C2202FBC6000884A43 /* SideChannelDataLeakage.storyboard in Resources */,
-				F6E64562202FBB6800884A43 /* LICENSE.txt in Resources */,
 				F6E645B7202FBC6000884A43 /* TransportLayerProtection.storyboard in Resources */,
 				6E30A0AA20874D72007534D8 /* DVIASplash in Resources */,
 				F6DE6F78202FA4DE00A3A757 /* Home.storyboard in Resources */,
@@ -1646,7 +1650,6 @@
 				6EADF0782083674600A4AB1C /* slider-active.png in Resources */,
 				F6C8AA37205D80D5001E1CCB /* BinaryProtection.storyboard in Resources */,
 				6E3D0559207E14DE000395C2 /* example.der in Resources */,
-				F6E64550202FBB6700884A43 /* LICENSE.txt in Resources */,
 				F6E645D3202FBC6000884A43 /* SecurityDecisonsViaUntrustedInput.storyboard in Resources */,
 				F6E645B9202FBC6000884A43 /* SensitiveInformation.storyboard in Resources */,
 				F6C8AA25205D2CBF001E1CCB /* JailbreakDetection.storyboard in Resources */,
@@ -2025,7 +2028,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UAVZNE8PJA;
+				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = "DVIA-v2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2048,7 +2051,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = UAVZNE8PJA;
+				DEVELOPMENT_TEAM = 4Y2PN6E5NM;
 				INFOPLIST_FILE = "DVIA-v2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
